@@ -1,0 +1,23 @@
+{
+  "name": "pdf-image-extractor",
+  "version": "0.1.0",
+  "description": "extract all images from a pdf via CLI",
+  "main": "index.js",
+  "type": "module",
+  "bin": "bin/pdfimg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pdf",
+    "image",
+    "extract",
+    "export"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pdfjs-dist": "^2.12.313",
+    "sharp": "^0.29.3"
+  }
+}
