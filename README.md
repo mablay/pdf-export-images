@@ -25,4 +25,4 @@ extractImages('file.pdf', 'output/dir')
   .catch(console.error)
 ```
 
-See: [bin/pdfimg.js](bin/pdfimg.js) for progress details during extraction.
+See: [cli.js](https://github.com/mablay/pdf-export-images/blob/main/cli.js#L23) for progress details during extraction.
