@@ -1,5 +1,5 @@
 {
-  "name": "pdf-image-extractor",
+  "name": "pdf-img",
   "version": "0.1.0",
   "description": "extract all images from a pdf via CLI",
   "main": "index.js",
@@ -12,9 +12,15 @@
     "pdf",
     "image",
     "extract",
-    "export"
+    "export",
+    "cli",
+    "png"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ablay/pdfimg.git"
+  },
+  "author": "Marc Ablay <marc.ablay@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "pdfjs-dist": "^2.12.313",

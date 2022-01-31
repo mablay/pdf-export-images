@@ -1,12 +1,28 @@
 # PDF Image Extractor
+Exports images from a PDF file to disk.
 
-## Install
+## Use via CLI
+```
+Usage: npx pdfimg <file> [dir]
+
+Arguments:
+  file        path to PDF file
+  dir         image destination directory (default: ".")
+```
+You can also install the package globally via `npm i -g pdfimg` to run the command without `npx`
+
+## Programatic use
+install
 ```sh
-npm i -g pdfimg
+npm i pdfimg
 ```
 
-## Usage
-```sh
-pdfimg path/to.pdf path/for/images/
+`script.js`
+```js
+import { extractImages } from 'pdfimg'
+extractImages('file.pdf', 'output/dir')
+  .then(images => console.log('Extracted', images.length, 'images'))
+  .catch(console.error)
 ```
-=> writes all images from the pdf (1st argument) to current directory or to a provided destination (2nd argument).
+
+See: [bin/pdfimg.js](bin/pdfimg.js) for progress details during extraction.
