@@ -1,6 +1,6 @@
 {
   "name": "pdf-export-images",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "exports images from a pdf file to disk via CLI",
   "main": "index.js",
   "type": "module",
