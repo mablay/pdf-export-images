@@ -1,5 +1,5 @@
-# PDF Image Extractor
-Exports images from a PDF file to disk.
+# PDF Export Images
+Exports images in their native resolution from a PDF file to disk.
 
 ## Use via CLI
 ```

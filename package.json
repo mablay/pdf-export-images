@@ -1,5 +1,5 @@
 {
-  "name": "pdfimg",
+  "name": "pdf-export-images",
   "version": "1.0.0",
   "description": "extract all images from a pdf via CLI",
   "main": "index.js",
