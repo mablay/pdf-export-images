@@ -3,23 +3,23 @@ Exports images in their native resolution from a PDF file to disk.
 
 ## Use via CLI
 ```
-Usage: npx pdfimg <file> [dir]
+Usage: npx pdf-export-images <file> [dir]
 
 Arguments:
   file        path to PDF file
   dir         image destination directory (default: ".")
 ```
-You can also install the package globally via `npm i -g pdfimg` to run the command without `npx`
+You can also install the package globally via `npm i -g pdf-export-images` to run the command without `npx`
 
 ## Programatic use
 install
 ```sh
-npm i pdfimg
+npm i pdf-export-images
 ```
 
 `script.js`
 ```js
-import { extractImages } from 'pdfimg'
+import { extractImages } from 'pdf-export-images'
 extractImages('file.pdf', 'output/dir')
   .then(images => console.log('Extracted', images.length, 'images'))
   .catch(console.error)

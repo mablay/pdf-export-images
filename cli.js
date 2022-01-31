@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { extractImagesEvents } from '../index.js'
+import { extractImagesEvents } from './index.js'
 const args = process.argv.slice(2)
 const [file, dir = '.'] = args
 

@@ -4,7 +4,7 @@
   "description": "extract all images from a pdf via CLI",
   "main": "index.js",
   "type": "module",
-  "bin": "bin/pdfimg.js",
+  "bin": "cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
