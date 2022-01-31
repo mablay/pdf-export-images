@@ -1,1 +1,1 @@
-export { extractImagesEvents, extractImages } from './src/extract-images.js'
+export { exportImagesEvents, exportImages } from './src/export-images.js'

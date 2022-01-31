@@ -19,10 +19,10 @@ npm i pdf-export-images
 
 `script.js`
 ```js
-import { extractImages } from 'pdf-export-images'
-extractImages('file.pdf', 'output/dir')
-  .then(images => console.log('Extracted', images.length, 'images'))
+import { exportImages } from 'pdf-export-images'
+exportImages('file.pdf', 'output/dir')
+  .then(images => console.log('Exported', images.length, 'images'))
   .catch(console.error)
 ```
 
-See: [cli.js](https://github.com/mablay/pdf-export-images/blob/main/cli.js#L23) for progress details during extraction.
+See: [cli.js](https://github.com/mablay/pdf-export-images/blob/main/cli.js#L23) for progress details during export.

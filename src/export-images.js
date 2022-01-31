@@ -5,9 +5,9 @@ import Path from 'path'
 
 const { getDocument, OPS } = pdfjs
 
-export function extractImagesEvents (src, dst) {
+export function exportImagesEvents (src, dst) {
   const ee = new EventEmitter()
-  const promise = extractImages(src, dst, (name, event) => ee.emit(name, event))
+  const promise = exportImages(src, dst, (name, event) => ee.emit(name, event))
   // The promise consumer can register event hanlders to
   // observe the promise progression details
   promise.on = (name, handler) => {
@@ -17,7 +17,7 @@ export function extractImagesEvents (src, dst) {
   return promise
 }
 
-export async function extractImages (src, dst, emit = () => {}) {
+export async function exportImages (src, dst, emit = () => {}) {
   const doc = await getDocument(src).promise
   const pageCount = doc._pdfInfo.numPages
   emit('load', { pageCount })

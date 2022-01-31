@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-import { extractImagesEvents } from './index.js'
+import { exportImagesEvents } from './index.js'
 const args = process.argv.slice(2)
 const [file, dir = '.'] = args
 
 const help = `Usage: pdfimg <file> [dir]
 
-Extracts all images from a PDF file and writes them to disk.
+Exports images from a PDF file to disk.
 
 Arguments:
   file        path to PDF file
@@ -20,9 +20,9 @@ if (args.includes('-h') || args.includes('--help')) {
   console.warn('Missing PDF source path argument!')
   console.log(help)
 } else {
-  extractImagesEvents(file, dir)
-    .on('load', event => console.log('Extracting images from', event.pageCount, 'pages...'))
+  exportImagesEvents(file, dir)
+    .on('load', event => console.log('Exporting images from', event.pageCount, 'pages...'))
     .on('image', ({ file, width, height }) => console.log(file, `(${width}x${height})`))
-    .on('done', images => console.log(images.length, 'images extracted'))
+    .on('done', images => console.log(images.length, 'images exported'))
     .catch(console.error)
 }
