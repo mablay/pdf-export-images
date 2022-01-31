@@ -3,7 +3,7 @@ import { exportImagesEvents } from './index.js'
 const args = process.argv.slice(2)
 const [file, dir = '.'] = args
 
-const help = `Usage: pdfimg <file> [dir]
+const help = `Usage: pdf-export-images <file> [dir]
 
 Exports images from a PDF file to disk.
 
