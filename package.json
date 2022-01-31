@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ablay/pdfimg.git"
+    "url": "https://github.com/ablay/pdf-export-images.git"
   },
   "author": "Marc Ablay <marc.ablay@gmail.com>",
   "license": "ISC",
