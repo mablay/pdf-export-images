@@ -6,7 +6,7 @@
   "type": "module",
   "bin": "cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "packlist": "npm pack --dry-run"
   },
   "keywords": [
     "pdf",
@@ -23,7 +23,7 @@
   "author": "Marc Ablay <marc.ablay@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "pdfjs-dist": "^2.12.313",
-    "sharp": "^0.29.3"
+    "pdfjs-dist": "^3.9.179",
+    "sharp": "^0.32.5"
   }
 }
