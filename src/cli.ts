@@ -25,5 +25,4 @@ if (args.includes('-h') || args.includes('--help')) {
     .on('image', ({ file, width, height }) => console.log(file, `(${width}x${height})`))
     .on('error', console.error)
     .on('done', images => console.log(images.length, 'images exported'))
-    .catch(console.error)
 }

@@ -6,6 +6,7 @@
   "type": "module",
   "bin": "cli.js",
   "scripts": {
+    "build": "tsc",
     "packlist": "npm pack --dry-run"
   },
   "keywords": [
@@ -23,7 +24,11 @@
   "author": "Marc Ablay <marc.ablay@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "pdfjs-dist": "^3.9.179",
-    "sharp": "^0.32.5"
+    "pdfjs-dist": "^4.0.379",
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/pdfjs-dist": "^2.10.378"
   }
 }
