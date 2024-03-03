@@ -20,7 +20,7 @@ export interface ExportImagesEvent {
   image: [Image]
 }
 
-export function exportImagesEvents (src: string, dst: string) {
+export function exportImagesEvents (src: string, dst: string = '.') {
   const ee = new EventEmitter<ExportImagesEvent>()
   getDocument(src).promise
     .then(doc => processDoc(doc, dst, ee))
@@ -28,7 +28,7 @@ export function exportImagesEvents (src: string, dst: string) {
   return ee
 }
 
-export async function exportImages (src: string, dst: string) {
+export async function exportImages (src: string, dst: string = '.') {
   return new Promise((resolve, reject) => {
     exportImagesEvents (src, dst)
       .on('done', resolve)
