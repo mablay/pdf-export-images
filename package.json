@@ -2,11 +2,12 @@
   "name": "pdf-export-images",
   "version": "1.1.0",
   "description": "exports images from a pdf file to disk via CLI",
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "module",
-  "bin": "cli.js",
+  "bin": "dist/cli.js",
+  "files": ["dist"],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && chmod +x dist/cli.js",
     "packlist": "npm pack --dry-run"
   },
   "keywords": [
